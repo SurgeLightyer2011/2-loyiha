@@ -66,6 +66,9 @@
                 if (loginVal === "admin" && parolVal === "123") {
                     localStorage.setItem("login", loginVal);
                     window.location.href = "index.html";
+                    login.value = ""
+                    parol.value = ""
+
                 } else {
                     alert("Parol xato");
                 }

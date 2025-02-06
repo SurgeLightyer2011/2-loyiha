@@ -41,6 +41,8 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" id="searchInp" type="search" placeholder="Search" aria-label="Search">
                     <div id="userInfo" style="display: flex; align-items: center;">
+                <a class="btn btn-outline-dark" href="./login.html" style="width: 125px; margin: 3px;" type="submit">Sign In</a>
+
                     </div>
                 </form>
             </div>
@@ -89,8 +91,8 @@
                         <img src="${phone.rasmi[0]}" class="card-img-top" alt="${phone.nomi}">
                         <div class="card-body">
                             <h5 class="card-title">${phone.nomi}</h5>
-                            <p class="card-text">Brend: ${phone.brend}</p>
-                            <p class="card-text">Narxi: ${phone.narxi} MB</p>
+                            <p class="card-text"> ${phone.brend}</p>
+                            <p class="card-text">${phone.narxi} MB</p>
                             <a href="productDetail.html?id=${phone.id}" class="btn btn-primary">Download</a>
                         </div>
                     </div>
@@ -105,7 +107,7 @@
 
             if (login) {
                 userInfo.innerHTML = `
-                    <b id="exitIcon" style="color: black">${login}</b>
+                    <b id="exit" style="color: black">${login}</b>
                     <svg xmlns="http://www.w3.org/2000/svg" id="exitIcon" style="color: black; margin-left: 15px" width="25" height="25" viewBox="0 0 16 16">
                         <path d="M2.146 2.854a.5.5 0 0 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854z"/>
                     </svg>
